@@ -1,6 +1,6 @@
 import { useColorModeValue } from '@/components/ui/color-mode';
 import { toaster } from '@/components/ui/toaster';
-import { useProductStore } from '@/store/product';
+import { useProductStore } from '../store/product.js';
 import { Box, Button, Container, Heading, Input, Toaster, VStack } from '@chakra-ui/react';
 import React from 'react'
 import { useState } from 'react';
@@ -77,7 +77,7 @@ const CreatePage = () => {
         </Box>
       </VStack>
     </Container>
-  )
-}
+  );
+};
 
-export default CreatePage
+export default CreatePage;
